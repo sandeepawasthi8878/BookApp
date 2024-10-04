@@ -67,7 +67,7 @@ const headers = {
   useEffect(() => {
     const fetch = async () => {
         const response = await axios.get(
-            `http://localhost:5000/api/v1/get-book-by-id/${id}`
+            `https://bookapp-backed.onrender.com/api/v1/get-book-by-id/${id}`
         );
         setData(response.data.data);
     };

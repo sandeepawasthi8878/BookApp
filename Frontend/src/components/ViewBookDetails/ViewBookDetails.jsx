@@ -20,7 +20,7 @@ const ViewBookDetails = () => {
     useEffect(() => {
         const fetch = async () => {
             const response = await axios.get(
-                `http://localhost:5000/api/v1/get-book-by-id/${id}`
+                `https://bookapp-backed.onrender.com/api/v1/get-book-by-id/${id}`
             );
             setData(response.data.data);
         };
@@ -49,7 +49,7 @@ const ViewBookDetails = () => {
 
         try {
             const response = await axios.get(
-                "http://localhost:5000/api/v1/favourites",
+                "https://bookapp-backed.onrender.com/api/v1/favourites",
                 { headers }
             );
 
@@ -65,14 +65,14 @@ const ViewBookDetails = () => {
 
     const handleCart = async () => {
         const response = await axios.put(
-            "http://localhost:5000/api/v1/add-to-cart", {}, { headers }
+            "https://bookapp-backed.onrender.com/api/v1/add-to-cart", {}, { headers }
         )
         alert(response.data.message)
     }
 
     const deleteBook = async () => {
         const response = await axios.delete(
-            "http://localhost:5000/api/v1/delete-book",
+            "https://bookapp-backed.onrender.com/api/v1/delete-book",
             { headers }
         )
         alert(response.data.message)

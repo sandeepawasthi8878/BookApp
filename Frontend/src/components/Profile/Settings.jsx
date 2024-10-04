@@ -18,7 +18,7 @@ const Settings = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "http://localhost:5000/api/v1/get-user-information",
+        "https://bookapp-backed.onrender.com/api/v1/get-user-information",
         { headers }
       )
       setProfileData(response.data)
@@ -28,7 +28,7 @@ const Settings = () => {
   }, [])
 
   const submitAddress = async () => {
-    const response = await axios.put("http://localhost:5000/api/v1/update-address", Value,{headers})
+    const response = await axios.put("https://bookapp-backed.onrender.com/api/v1/update-address", Value,{headers})
   alert(response.data.message)
   }
   return (

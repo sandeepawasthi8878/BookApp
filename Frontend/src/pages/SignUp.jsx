@@ -29,7 +29,7 @@ const SignUp = () => {
       ) {
         alert("All fields are required");
       } else {
-        const response = await axios.post("http://localhost:5000/api/v1/sign-up", Values);
+        const response = await axios.post("https://bookapp-backed.onrender.com/api/v1/sign-up", Values);
        alert(response.data.message); // Check the response in the console
         navigate("/Login"); // Redirect to login page on successful sign-up
       }

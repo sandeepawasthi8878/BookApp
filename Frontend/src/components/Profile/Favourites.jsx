@@ -58,7 +58,7 @@ const Favourites = () => {
 
     try {
       const response = await axios.delete(
-        "http://localhost:5000/api/v1/delete-book",
+        "https://bookapp-backed.onrender.com/api/v1/delete-book",
         { headers }
       );
       alert(response.data.message);
