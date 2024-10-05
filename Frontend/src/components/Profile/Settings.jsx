@@ -18,6 +18,7 @@ const Settings = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
+        "https://bookapp-jeec.onrender.com/api/v1/get-user-information",
         https://bookapp-jeec.onrender.com/api/v1/get-user-information",
         { headers }
       )

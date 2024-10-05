@@ -23,7 +23,7 @@ const AllOrder = () => {
     const fetchOrders = async () => {
       try {
         const response = await axios.get(
-          https://bookapp-jeec.onrender.com/api/v1/get-all-orders',
+          'https://bookapp-jeec.onrender.com/api/v1/get-all-orders',
           { headers }
         );
         // Filter out any null or undefined orders

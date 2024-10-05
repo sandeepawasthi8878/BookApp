@@ -49,7 +49,7 @@ const ViewBookDetails = () => {
 
         try {
             const response = await axios.get(
-                "https://bookapp-backed.onrender.com/api/v1/favourites",
+                "https://bookapp-jeec.onrender.com/api/v1/favourites",
                 { headers }
             );
 
@@ -65,14 +65,14 @@ const ViewBookDetails = () => {
 
     const handleCart = async () => {
         const response = await axios.put(
-            "https://bookapp-backed.onrender.com/api/v1/add-to-cart", {}, { headers }
+            "https://bookapp-jeec.onrender.com/api/v1/add-to-cart", {}, { headers }
         )
         alert(response.data.message)
     }
 
     const deleteBook = async () => {
         const response = await axios.delete(
-            "https://bookapp-backed.onrender.com/api/v1/delete-book",
+            "https://bookapp-jeec.onrender.com/api/v1/delete-book",
             { headers }
         )
         alert(response.data.message)
