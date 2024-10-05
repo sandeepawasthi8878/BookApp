@@ -14,7 +14,7 @@ const UserOrderHistory = () => {
     const fetchOrderHistory = async () => {
       try {
         const response = await axios.get(
-          "https://bookapp-backed.onrender.com/api/v1/get-order-history",
+          "https://bookapp-jeec.onrender.com/api/v1/get-order-history",
           { headers }
         );
         setOrderHistory(response.data.data);
