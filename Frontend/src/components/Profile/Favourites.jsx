@@ -23,7 +23,7 @@ const Favourites = () => {
 
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/v1/favourites",
+          "https://bookapp-jeec.onrender.com/api/v1/favourites",
           { headers }
         );
 
@@ -31,7 +31,7 @@ const Favourites = () => {
         const bookDetails = await Promise.all(
           favouriteBookIds.map(async (bookId) => {
             const bookResponse = await axios.get(
-              `http://localhost:5000/api/v1/get-book-by-id/${bookId}`
+              `https://bookapp-jeec.onrender.com/api/v1/get-book-by-id/${bookId}`
             );
             return bookResponse.data.data; 
           })
