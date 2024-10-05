@@ -7,7 +7,7 @@ const AllBooks = () => {
     useEffect(() => {
         const fetch = async () => {
             const response = await axios.get(
-                "https://bookapp-backed.onrender.com/api/v1/get-all-book"
+                https://bookapp-jeec.onrender.com/api/v1/get-all-book"
             )
             setData(response.data.data)
         }
