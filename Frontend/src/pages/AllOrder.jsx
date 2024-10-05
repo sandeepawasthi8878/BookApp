@@ -23,7 +23,7 @@ const AllOrder = () => {
     const fetchOrders = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:5000/api/v1/get-all-orders',
+          https://bookapp-jeec.onrender.com/api/v1/get-all-orders',
           { headers }
         );
         // Filter out any null or undefined orders
@@ -50,7 +50,7 @@ const AllOrder = () => {
     const id = order._id;
     try {
       const response = await axios.put(
-        `https://bookapp-backed.onrender.com/api/v1/update-status/${id}`,
+        `https://bookapp-jeec.onrender.com/api/v1/update-status/${id}`,
         Values,
         { headers }
       );
