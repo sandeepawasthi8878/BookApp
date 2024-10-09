@@ -75,7 +75,7 @@ try{
 
 
   return (
-    <div className='bg-zinc-900 px-12 h-full py-8'>
+    <div className='bg-zinc-900 px-12 h-full py-8 min-h-screen'>
       {!Cart.length && <div className=' flex items-center justify-center '><Loader /></div>}
       
       {Cart.length === 0 && (

@@ -92,8 +92,8 @@ const UserOrderHistory = () => {
               </div>
               <div className="w-[45%]">
                 <h1 className="">
-                  {items.book && items.book.description
-                    ? items.book.description.slice(0, 50)
+                  {items.book && items.book.desc
+                    ? items.book.desc.slice(0, 50)
                     : "No description available"}
                   ...
                 </h1>
